@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Positioning</title>
+
+    <style>
+        body {
+            height: 1500px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: navy;
+            color: white;
+            padding: 15px;
+            z-index: 2;
+        }
+
+        .relative {
+            position: relative;
+            background: lightblue;
+            height: 180px;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: orange;
+            padding: 10px;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            padding: 12px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>College Website Header</header>
+
+    <h2>CSS Positioning Demo</h2>
+
+    <div class="relative">
+        Relative Box
+
+        <div class="absolute">
+            Absolute Badge
+        </div>
+    </div>
+
+    <p>Scroll down to see the sticky header.</p>
+
+    <div class="fixed">
+        Notification!
+    </div>
+
+</body>
+</html>
